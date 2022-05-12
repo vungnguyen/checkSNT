@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=1;
+    let demSNT=0;
+    while (demSNT<=20) {
+        let songuyento=1;
+        let i = 2;
+        if (n==2){
+            document.write(n+ 'la so nguyen to' + "<br>");
+            demSNT++;
+        }else {
+            while (i < n) {
+                if (n % i == 0) {
+                    songuyento = 0;
+                    break;
+                }
+                i++;
+            }
+            if (songuyento == 1) {
+                document.write(n + 'la so nguyen to' +'<br>');
+                demSNT++;
+            }
+
+        }
+        n++;
+    }
+
+</script>
+
+</body>
+</html>
